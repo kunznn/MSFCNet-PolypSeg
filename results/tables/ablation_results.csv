@@ -1,0 +1,5 @@
+Variant,MSM,FCF,Kvasir-SEG,CVC-ClinicDB,CVC-300,CVC-ColonDB,ETIS-LaribPolypDB,Mean_Dice,Mean_IoU,Mean_MAE
+Baseline,No,No,0.907,0.927,0.883,0.742,0.727,0.837,0.770,0.028
+Baseline_plus_MSM,Yes,No,0.903,0.934,0.877,0.778,0.740,0.846,0.782,0.026
+Baseline_plus_FCF,No,Yes,0.903,0.937,0.888,0.772,0.760,0.852,0.784,0.023
+MSFCNet,Yes,Yes,0.909,0.937,0.904,0.795,0.755,0.860,0.796,0.021

@@ -1,0 +1,40 @@
+project_name: PolypSeg_ZhangNan
+experiment_name: B05_MobileNetV2UNet_KvasirCVC_JointTrain
+run_name: b05_mobilenetv2unet_kvasircvc_jointtrain
+seed: 42
+image_size: 352
+batch_size: 16
+epochs: 200
+lr: 0.0001
+weight_decay: 0.00001
+num_workers: 4
+threshold: 0.5
+early_stopping_patience: 40
+scheduler: cosine
+min_lr: 0.000001
+augmentation:
+  enabled: true
+  rotation_limit: 30
+  rotation_p: 0.3
+  scale_limit: 0.2
+  scale_p: 0.25
+  flip_p: 0.5
+  gaussian_noise_p: 0.15
+  gaussian_blur_p: 0.2
+  brightness_contrast_p: 0.25
+  elastic_p: 0.1
+model:
+  name: mobilenetv2unet
+  in_channels: 3
+  out_channels: 1
+  pretrained: true
+  decoder_channels: [256, 128, 64, 32]
+data:
+  train_images: data/processed/train/images
+  train_masks: data/processed/train/masks
+  val_images: data/processed/val/images
+  val_masks: data/processed/val/masks
+  test_kvasir_images: data/processed/test/Kvasir/images
+  test_kvasir_masks: data/processed/test/Kvasir/masks
+  test_cvc_images: data/processed/test/CVC-ClinicDB/images
+  test_cvc_masks: data/processed/test/CVC-ClinicDB/masks

@@ -1,0 +1,13 @@
+# Python 3.10.20
+torch==2.5.1
+torchvision==0.20.1
+numpy
+opencv-python
+Pillow
+matplotlib
+pandas
+scikit-learn
+PyYAML
+tqdm
+thop
+albumentations
