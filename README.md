@@ -93,4 +93,4 @@ It can be placed under `checkpoints/` before running the evaluation script.
 
 ## Citation
 
-Citation information will be added after the manuscript is available.
+
