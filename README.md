@@ -75,11 +75,6 @@ For Linux/macOS shells, replace `^` with `\`.
 
 The public result files are collected in `results/`:
 
-- `tables/quantitative_results.csv`: Dice comparison on five benchmark datasets.
-- `tables/efficiency_results.csv`: model complexity and inference speed comparison.
-- `tables/ablation_results.csv`: contributions of MSM and FCF.
-- `figures/msfcnet_architecture.png`: flow diagram of the proposed MSFCNet.
-
 The final MSFCNet training log is available at:
 
 ```text
