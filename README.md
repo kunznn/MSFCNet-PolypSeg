@@ -2,8 +2,6 @@
 
 This repository contains the PyTorch implementation of **MSFCNet**, a multi-scale feature calibration network for colonoscopic polyp segmentation.
 
-MSFCNet uses an ImageNet-pretrained ResNet34 encoder, Multi-Scale Perception Modules (MSMs), and a semantic-guided Feature Calibration Fusion (FCF) decoder. MSM improves the representation of polyps with different scales and irregular appearances, while FCF uses high-level semantic information to calibrate low-level skip features before fusion.
-
 > **Note:** Some files retain legacy names from early experiments. In particular, `train_polypmfc.py` and the `PolypMFCNet` class correspond to the final **MSFCNet** model. In some early experiment files, FCF was temporarily named `BCF`. The checkpoint and configuration named `a3_polypmfc_msm_bcf_*` correspond to the full MSFCNet model reported in the manuscript.
 
 ## Repository Structure
